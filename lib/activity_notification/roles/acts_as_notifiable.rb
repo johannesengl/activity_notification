@@ -2,7 +2,7 @@ module ActivityNotification
   module ActsAsNotifiable
     extend ActiveSupport::Concern
 
-    class_methods do
+    module ClassMethods
       # Adds required callbacks for creating and updating
       # notifiable models.
       #

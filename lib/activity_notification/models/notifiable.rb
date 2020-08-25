@@ -20,7 +20,7 @@ module ActivityNotification
       Rails.application.routes.default_url_options
     end
     
-    class_methods do
+    module ClassMethods
       def set_notifiable_class_defaults
         self._notification_targets        = {}
         self._notification_group          = {}

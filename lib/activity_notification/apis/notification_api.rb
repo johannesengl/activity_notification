@@ -8,7 +8,7 @@ module ActivityNotification
     end
 
     # For notification API
-    class_methods do
+    module ClassMethods
       def notify(target_type, notifiable, options = {})
         targets = notifiable.notification_targets(target_type, options[:key])
         unless targets.blank?

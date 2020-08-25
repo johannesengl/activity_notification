@@ -2,7 +2,7 @@ module ActivityNotification
   module ActsAsTarget
     extend ActiveSupport::Concern
 
-    class_methods do
+    module ClassMethods
       def acts_as_target(opts = {})
         options = opts.clone
         if options[:skip_email] == true
